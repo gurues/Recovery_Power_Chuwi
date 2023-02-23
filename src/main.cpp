@@ -191,6 +191,8 @@ void setup() {
     Serial.begin(115200);
   #endif
 
+  delay(30000); //retardp de 30 seg para disponer de tensión en el enchufe del PC                                                    
+
   // Configuración y actuación inicial del servo
   myservo.attach(pin, 500, 2450);
   myservo.write(pos_init);     
