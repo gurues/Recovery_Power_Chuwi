@@ -1,8 +1,8 @@
-*/
+/*
 
 Recovery Power miniPC Chuwi
 
-Mediante un servomotor realizamos un accionamiento mec,anico que permite arrancar el miniPC tras recuperar la energía
+Mediante un servomotor realizamos un accionamiento mecánico que permite arrancar el miniPC tras recuperar la energía
 
 gurues@2022
 
@@ -190,6 +190,8 @@ void setup() {
   #ifdef ___DEBUG___
     Serial.begin(115200);
   #endif
+
+  delay(30000); //retardp de 30 seg para disponer de tensión en el enchufe del PC                                                    
 
   // Configuración y actuación inicial del servo
   myservo.attach(pin, 500, 2450);
